@@ -1,0 +1,37 @@
+/* Author - Harsh Shah */
+package temp;
+import java.util.Scanner;
+public class Temp 
+{
+    
+    public static void main(String[] args) 
+    {
+        
+        Scanner input=new Scanner(System.in);
+    
+    System.out.print("enter a no.:");
+    int a=input.nextInt();
+    
+    if(a%2==0 && a%3==0)
+        System.out.println("By 2 and 3 ");
+    if(a%2==0 || a%3==0)
+         System.out.println("By 2 or 3 ");
+    if(a%2==0 ^ a%3==0)
+         System.out.println("By 2 or 3 but not both ");
+    
+    System.out.print("enter a year:");
+    int year=input.nextInt();
+    
+    boolean leapyear=(year%4==0 && year%100!=0 && year%400==0);
+    
+    System.out.println("leap year or not? " +leapyear);
+            
+    int lottery=(int)(Math.random() * 100);
+    
+    System.out.print("enter a no:");
+    int guess=input.nextInt();
+    
+    
+        
+    }
+}
